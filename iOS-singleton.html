@@ -2,7 +2,7 @@
 
 
 
-<html lang="en-US" 
+<html lang="zh-Hant" 
   
     mode="light"
   
@@ -26,7 +26,7 @@
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="iOS 中的 Singleton 及實作方式" />
 <meta name="author" content="Ken Chang" />
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content="zh_Hant" />
 <meta name="description" content="Singleton 原則是單例對象必須保證只有一個實例存在。不管是以何種方式實現，這個設計模式在軟體開發常見。甚至有些內建的類別已經是單例。iOS 有幾種作法可以讓開發者自己做出符合單例的類別，特別要注意 Thread Safety 即可。如果使用 Swift 開發，更有官方推薦簡潔有力的做法。" />
 <meta property="og:description" content="Singleton 原則是單例對象必須保證只有一個實例存在。不管是以何種方式實現，這個設計模式在軟體開發常見。甚至有些內建的類別已經是單例。iOS 有幾種作法可以讓開發者自己做出符合單例的類別，特別要注意 Thread Safety 即可。如果使用 Swift 開發，更有官方推薦簡潔有力的做法。" />
 <link rel="canonical" href="https://kennc.github.io/iOS-singleton.html" />
@@ -40,7 +40,7 @@
 <meta name="twitter:creator" content="@Ken Chang" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"url":"https://kennc.github.io/iOS-singleton.html","headline":"iOS 中的 Singleton 及實作方式","dateModified":"2021-02-15T00:00:00+08:00","datePublished":"2021-02-15T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kennc.github.io/iOS-singleton.html"},"author":{"@type":"Person","name":"Ken Chang"},"description":"Singleton 原則是單例對象必須保證只有一個實例存在。不管是以何種方式實現，這個設計模式在軟體開發常見。甚至有些內建的類別已經是單例。iOS 有幾種作法可以讓開發者自己做出符合單例的類別，特別要注意 Thread Safety 即可。如果使用 Swift 開發，更有官方推薦簡潔有力的做法。","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"iOS 中的 Singleton 及實作方式","url":"https://kennc.github.io/iOS-singleton.html","dateModified":"2021-02-15T00:00:00+08:00","datePublished":"2021-02-15T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kennc.github.io/iOS-singleton.html"},"author":{"@type":"Person","name":"Ken Chang"},"description":"Singleton 原則是單例對象必須保證只有一個實例存在。不管是以何種方式實現，這個設計模式在軟體開發常見。甚至有些內建的類別已經是單例。iOS 有幾種作法可以讓開發者自己做出符合單例的類別，特別要注意 Thread Safety 即可。如果使用 Swift 開發，更有官方推薦簡潔有力的做法。","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -354,8 +354,12 @@
       <div class="post-meta text-muted d-flex flex-column">
         <!-- Published date and author -->
         <div>
+          <span class="semi-bold">
+            Ken Chang
+          </span>
           <!--
   Date format snippet
+  See: /assets/js/_utils/timeage.js
 -->
 
 
@@ -367,7 +371,10 @@
     data-toggle="tooltip"
     data-placement="bottom"
     title="Mon, Feb 15, 2021, 12:00 AM +0800"
-  >
+  
+
+  
+  prep="on" >
 
   
   
@@ -380,10 +387,6 @@
 
 </span>
 
-          by
-          <span class="author">
-            Ken Chang
-          </span>
         </div>
 
         <div>
@@ -1031,6 +1034,19 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -1161,6 +1177,7 @@
           <div class="card-body">
             <!--
   Date format snippet
+  See: /assets/js/_utils/timeage.js
 -->
 
 
@@ -1168,7 +1185,10 @@
 
 
 <span class="timeago small"
-  >
+  
+
+  
+   >
 
   
   
@@ -1209,6 +1229,7 @@
           <div class="card-body">
             <!--
   Date format snippet
+  See: /assets/js/_utils/timeage.js
 -->
 
 
@@ -1216,7 +1237,10 @@
 
 
 <span class="timeago small"
-  >
+  
+
+  
+   >
 
   
   
@@ -1259,6 +1283,7 @@
           <div class="card-body">
             <!--
   Date format snippet
+  See: /assets/js/_utils/timeage.js
 -->
 
 
@@ -1266,7 +1291,10 @@
 
 
 <span class="timeago small"
-  >
+  
+
+  
+   >
 
   
   
@@ -1319,10 +1347,10 @@
   
 
   
-  <span class="btn btn-outline-primary disabled"
+  <a href="/posts/welcome-to-jekyll/" class="btn btn-outline-primary"
     prompt="Newer">
-    <p>-</p>
-  </span>
+    <p>Welcome to Jekyll!</p>
+  </a>
   
 
 </div>
@@ -1349,7 +1377,7 @@
     <div class="footer-left">
       <p class="mb-0">
         © 2021
-        <a href="https://twitter.com/username">your_full_name</a>.
+        <a href="https://twitter.com/username">Ken Chang</a>.
         
         <span data-toggle="tooltip" data-placement="top"
           title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span>
