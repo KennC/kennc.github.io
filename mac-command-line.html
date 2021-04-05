@@ -1399,6 +1399,33 @@ Apple 官方的類別有些已實作 sin...
 
 
     
+      <!--
+  The Disqus lazy loading.
+  Powered by: <https://github.com/osvaldasvalutis/disqusLoader.js>
+-->
+
+<div id="disqus" class="pt-2 pb-2">
+  <p class="text-center text-muted small pb-5">
+    Comments powered by <a href="https://disqus.com/">Disqus</a>.
+  </p>
+</div>
+
+<script src="/assets/js/lib/jquery.disqusloader.min.js"></script>
+<script>
+  const options = {
+    scriptUrl: '//http-kennc-github-io.disqus.com/embed.js',
+
+    disqusConfig: function() {
+      this.page.title = 'iTerm + Oh My Zsh 設定';
+      this.page.url = 'https://kennc.github.io/mac-command-line.html';
+      this.page.identifier = '/mac-command-line.html';
+    }
+  };
+
+  $.disqusLoader('#disqus', options);
+</script>
+
+    
 
     </div> <!-- #post-extend-wrapper -->
 

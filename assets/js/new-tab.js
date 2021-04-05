@@ -11,6 +11,7 @@ function handleExternalLinks () {
     var itemHost = href.replace(/https?:\/\/([^\/]+)(.*)/, '$1')
     if (itemHost !== '' && itemHost !== hostname) {
       item.target = '_blank'
+      item.rel = 'noopener noreferrer'
     }
   }
   
