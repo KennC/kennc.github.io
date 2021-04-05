@@ -17,26 +17,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   
+    <meta name="pv-cache-enabled" content="false">
+
+    
+  
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Git" />
+<meta property="og:title" content="使用 Jekyll 創建靜態網頁" />
+<meta name="author" content="Ken Chang" />
 <meta property="og:locale" content="zh_Hant" />
-<meta name="description" content="A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation." />
-<meta property="og:description" content="A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation." />
-<link rel="canonical" href="https://kennc.github.io/tags/git/" />
-<meta property="og:url" content="https://kennc.github.io/tags/git/" />
+<meta name="description" content="部落格從 Hugo 搬到 Jekyll 已過了一段時間，會搬移的原因只是比較喜歡 Jekyll 的 Theme 風格。我第一個使用的靜態網頁產生框架是 Hexo，後來改用 Hugo，最近換到 Jekyll，用這三種框架創建靜態網頁的流程非常類似，每種框架有不同的雷，但 Google 都可以找到解法，問題都不大。" />
+<meta property="og:description" content="部落格從 Hugo 搬到 Jekyll 已過了一段時間，會搬移的原因只是比較喜歡 Jekyll 的 Theme 風格。我第一個使用的靜態網頁產生框架是 Hexo，後來改用 Hugo，最近換到 Jekyll，用這三種框架創建靜態網頁的流程非常類似，每種框架有不同的雷，但 Google 都可以找到解法，問題都不大。" />
+<link rel="canonical" href="https://kennc.github.io/create-jekyll.html" />
+<meta property="og:url" content="https://kennc.github.io/create-jekyll.html" />
 <meta property="og:site_name" content="Ken Chang" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-05T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Git" />
+<meta property="twitter:title" content="使用 Jekyll 創建靜態網頁" />
 <meta name="twitter:site" content="@twitter_username" />
+<meta name="twitter:creator" content="@Ken Chang" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"url":"https://kennc.github.io/tags/git/","headline":"Git","description":"A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.","@type":"WebPage","@context":"https://schema.org"}</script>
+{"url":"https://kennc.github.io/create-jekyll.html","headline":"使用 Jekyll 創建靜態網頁","dateModified":"2021-04-05T00:00:00+08:00","datePublished":"2021-04-05T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kennc.github.io/create-jekyll.html"},"author":{"@type":"Person","name":"Ken Chang"},"description":"部落格從 Hugo 搬到 Jekyll 已過了一段時間，會搬移的原因只是比較喜歡 Jekyll 的 Theme 風格。我第一個使用的靜態網頁產生框架是 Hexo，後來改用 Hugo，最近換到 Jekyll，用這三種框架創建靜態網頁的流程非常類似，每種框架有不同的雷，但 Google 都可以找到解法，問題都不大。","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Git | Ken Chang
+  <title>使用 Jekyll 創建靜態網頁 | Ken Chang
   </title>
 
   <!--
@@ -102,6 +110,9 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 
 
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+
 
 
   <!-- JavaScripts -->
@@ -116,11 +127,13 @@
 -->
 
 
+  
 
 
 
 
-<script defer src="/assets/js/dist/page.min.js"></script>
+
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
@@ -267,30 +280,13 @@
 
         
           
-          <span>
-            <a href="/">Home</a>
-          </span>
-          
 
         
 
       
 
         
-        <span>
-          
-          
-          <a href="/tags">
-            Tags
-          </a>
-        </span>
-
-        
-
-      
-
-        
-          <span>Git</span>
+          <span>使用 Jekyll 創建靜態網頁</span>
 
         
 
@@ -303,7 +299,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -348,31 +344,210 @@
 
 <!-- return -->
 <div class="row">
-  <div class="col-12 col-lg-11 col-xl-8">
-    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
+
+  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
+
+    <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+      <h1 data-toc-skip>使用 Jekyll 創建靜態網頁</h1>
+
+      <div class="post-meta text-muted d-flex flex-column">
+        <!-- Published date and author -->
+        <div>
+          <span class="semi-bold">
+            Ken Chang
+          </span>
+          <!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+-->
+
+
+
+
+
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Mon, Apr  5, 2021, 12:00 AM +0800"
+  
+
+  
+  prep="on" >
+
+  
+  
+
+  
+    Apr  5
+  
+
+  <i class="unloaded">2021-04-05T00:00:00+08:00</i>
+
+</span>
+
+        </div>
+
+        <div>
+          <!-- lastmod -->
+          
+
+          <!-- read time -->
+          <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+<!-- words per minute  -->
+
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="547 words">3 min</span>
+
+
+          <!-- page views -->
+          
+
+        </div>
+
+      </div> <!-- .post-meta -->
+
+      <div class="post-content">
+
+        
+
+        <p>部落格從 <a href="https://gohugo.io/">Hugo</a> 搬到 <a href="https://jekyllrb.com/">Jekyll</a> 已過了一段時間，會搬移的原因只是比較喜歡 Jekyll 的 <a href="https://jekyllrb.com/resources/">Theme</a> 風格。我第一個使用的靜態網頁產生框架是 <a href="https://hexo.io/zh-tw/">Hexo</a>，後來改用 <a href="https://gohugo.io/">Hugo</a>，最近換到 <a href="https://jekyllrb.com/">Jekyll</a>，用這三種框架創建靜態網頁的流程非常類似，每種框架有不同的雷，但 Google 都可以找到解法，問題都不大。</p>
+
+<h2 id="1-安裝-jekyll">1. 安裝 Jekyll</h2>
+<p>從 <a href="https://jekyllrb.com/docs/">Jekyll</a> 依照官網步驟安裝。由於 Jekyll 是使用 Ruby 寫的，所以會需要安裝 Ruby，而安裝 Ruby 後，需要再安裝其他工具。</p>
+<ul>
+  <li>管理環境語言版本的工具，rbenv 或 RVM</li>
+  <li>管理 Ruby 套件的 Gem</li>
+  <li>管理 Ruby 套件版本的 Bundler</li>
+</ul>
+
+<p>如上述都有完成，就可以透過 <code class="language-plaintext highlighter-rouge">bundle exec jekyll s</code> 看到網站</p>
+
+<h2 id="2-修改-theme-為-chirpy">2. 修改 theme 為 Chirpy</h2>
+<p>在 <a href="https://github.com/cotes2020/jekyll-theme-chirpy/">Chirpy</a> 看 README 安裝</p>
+<ol>
+  <li>Gemfile 加上 <code class="language-plaintext highlighter-rouge">gem "jekyll-theme-chirpy"</code></li>
+  <li>
+    <p>修改 _config.yml 裡的 theme 為 <code class="language-plaintext highlighter-rouge">theme: jekyll-theme-chirpy</code></p>
+
+    <p>其實上面兩個步驟是多做，因為接下來他會請你安裝跟他相同的套件，且設定也需要從設定檔取得，所以直接把他的內容貼到自己的比較快。</p>
+  </li>
+  <li>把 chirpy 的 Gemfile 內有用到的套件都貼到你的 Gemfile</li>
+  <li>把 chirpy 的 _config.yml 內容，貼到 你的 _config.yml</li>
+</ol>
+
+<p>透過 <code class="language-plaintext highlighter-rouge">bundle</code> 安裝套件</p>
+
+<p>如上述都有完成，就可以透過 <code class="language-plaintext highlighter-rouge">bundle exec jekyll s</code> 看到已有安裝模板的網站</p>
+
+<h2 id="3-修改-ymal-資料">3. 修改 ymal 資料</h2>
+<p>在 _config.yml 修改個人資料、網站資料、網站樣式、追蹤碼…，依自己的需求修改即可。通常有開放的功能選項都會寫出來，照著格式填寫或修改即可。</p>
+
+<h2 id="4-安裝套件-jekyll-gist">4. 安裝套件 jekyll-gist</h2>
+<p>由於我個人部落格文章內有許多程式碼用 <a href="https://gist.github.com">Gist</a> 呈現，故需要安裝 <a href="https://github.com/jekyll/jekyll-gist">jekyll-gist</a> 套件，否則 Jekyll 無法知道文章內 Gist 的部分該怎麼解析。</p>
+
+<h2 id="5-產生的網站">5. 產生的網站</h2>
+<p>執行過 <code class="language-plaintext highlighter-rouge">bundle exec jekyll s</code>，產生的網站會放在 _site 資料夾，只要把內容放到支援靜態網頁的空間即可。故如果是使用 git，可以只 push 這一個資料夾。</p>
+
+
+      </div>
+
+      <div class="post-tail-wrapper text-muted">
+
+        <!-- categories -->
+        
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/web/'>Web</a>,
+            <a href='/categories/jekyll/'>Jekyll</a>
+        </div>
+        
+
+        <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/web/"
+            class="post-tag no-text-decoration" >Web</a>
+          
+          <a href="/tags/jekyll/"
+            class="post-tag no-text-decoration" >Jekyll</a>
+          
+          </div>
+        
+
+        <div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+          
+          <div class="license-wrapper">
+            This post is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            by the author.
+          </div>
+          
+
+          <!--
+ Post sharing snippet
+-->
+
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
     
-      <div id="page-tag">
-  <h1 class="pl-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    Git
-    <span class="lead text-muted pl-2">1</span>
-  </h1>
-  <ul class="post-content pl-0">
     
 
     
-    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="/git-snippet.html">個人 Git 常用指令</a>
-      <span class="dash flex-grow-1"></span>
-      <span class="text-muted small">Jan  9, 2021</span>
-    </li>
+      
+        <a href="https://twitter.com/intent/tweet?text=使用 Jekyll 創建靜態網頁 - Ken Chang&url=https://kennc.github.io/create-jekyll.html" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
     
-  </ul>
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=使用 Jekyll 創建靜態網頁 - Ken Chang&u=https://kennc.github.io/create-jekyll.html" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
+      
+        <a href="https://telegram.me/share?text=使用 Jekyll 創建靜態網頁 - Ken Chang&url=https://kennc.github.io/create-jekyll.html" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    
+
+    <i class="fa-fw fas fa-link small" onclick="copyLink()"
+        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
+
+  </span>
 </div>
 
-    
-    </div> <!-- #page -->
-  </div><!-- .col-12 -->
+
+        </div><!-- .post-tail-bottom -->
+
+      </div><!-- div.post-tail -->
+
+    </div> <!-- .post -->
+
+
+  </div> <!-- #post-wrapper -->
+
+  
+
+  
 
   <!--
   The Pannel on right side (Desktop views)
@@ -807,13 +982,430 @@
   </div> <!-- .access -->
 
   
+    <!-- BS-toc.js will be loaded at medium priority -->
+    <script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">Contents</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
 
+</div> <!-- .row -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+    <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+  
+    
+    
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+          
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1"
+      data-toc-skip>Further Reading</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/iOS-singleton.html">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+-->
+
+
+
+
+
+<span class="timeago small"
+  
+
+  
+   >
+
+  
+  
+
+  
+    Feb 15
+  
+
+  <i class="unloaded">2021-02-15T00:00:00+08:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>iOS 中的 Singleton 及實作方式</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Singleton 原則是單例對象必須保證只有一個實例存在。不管是以何種方式實現，這個設計模式在軟體開發常見。甚至有些內建的類別已經是單例。iOS 有幾種作法可以讓開發者自己做出符合單例的類別，特別要注意 Thread Safety 即可。如果使用 Swift 開發，更有官方推薦簡潔有力的做法。
+
+
+
+
+
+iOS 已實作 Singleton 的類別
+
+Apple 官方的類別有些已實作 sin...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/git-snippet.html">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+-->
+
+
+
+
+
+<span class="timeago small"
+  
+
+  
+   >
+
+  
+  
+
+  
+    Jan  9
+  
+
+  <i class="unloaded">2021-01-09T00:00:00+08:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>個人 Git 常用指令</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                記錄我常用的Git指令，有想到會陸續增加。
+
+
+
+checkout
+
+  $ git checkout &lt;branch&gt; 切換分支
+  $ git checkout -b &lt;branch&gt; 建立新分支，同時切換到新分支
+
+
+
+
+add
+
+  $ git add . 所有異動檔案加到暫存區（如果是 Git 1.x 版不會處理「刪除檔案」的異動）
+  $ git add ...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/mac-command-line.html">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+-->
+
+
+
+
+
+<span class="timeago small"
+  
+
+  
+   >
+
+  
+  
+
+  
+    Jan  2
+  
+
+  <i class="unloaded">2021-01-02T00:00:00+08:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>iTerm + Oh My Zsh 設定</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                iTerm + Oh My Zsh 設定。由於每次重灌 MAC 後就要上網搜尋一下模板跟字體的載點，以及環境的設定。所以這篇目的是記下步驟、連結資源，未來好找。
+
+
+
+
+  
+    安裝 iTerm2
+  
+  
+    安裝 oh my zsh
+  
+
+
+如無法安裝，請確認是否已事先安裝好 Command Line Tools 或是 Homebrew。
+
+在 iTerm2 上看到這畫面就...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+
+    <!--
+  Navigation buttons at the bottom of the post.
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/iOS-singleton.html" class="btn btn-outline-primary"
+    prompt="Older">
+    <p>iOS 中的 Singleton 及實作方式</p>
+  </a>
+  
+
+  
+  <span class="btn btn-outline-primary disabled"
+    prompt="Newer">
+    <p>-</p>
+  </span>
+  
+
 </div>
 
 
+    
+
+    </div> <!-- #post-extend-wrapper -->
+
+  </div> <!-- .col-* -->
+
+</div> <!-- .row -->
 
 
 

@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "使用 Jekyll 創建靜態網頁",
+    "url": "/create-jekyll.html",
+    "categories": "Web, Jekyll",
+    "tags": "Web, Jekyll",
+    "date": "2021-04-05 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "部落格從 Hugo 搬到 Jekyll 已過了一段時間，會搬移的原因只是比較喜歡 Jekyll 的 Theme 風格。我第一個使用的靜態網頁產生框架是 Hexo，後來改用 Hugo，最近換到 Jekyll，用這三種框架創建靜態網頁的流程非常類似，每種框架有不同的雷，但 Google 都可以找到解法，問題都不大。1. 安裝 Jekyll從 Jekyll 依照官網步驟安裝。由於 Jekyll 是使用 Ruby 寫的，所以會需要安裝 Ruby，而安裝 Ruby 後，需要再安裝其他工具。  管理環境語言版本的工具，rbenv 或 RVM  管理 Ruby 套件的 Gem  管理 Ruby 套件版..."
+  },
+  
+  {
     "title": "iOS 中的 Singleton 及實作方式",
     "url": "/iOS-singleton.html",
     "categories": "iOS",

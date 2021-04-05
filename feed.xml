@@ -4,7 +4,7 @@
   <id>https://kennc.github.io/</id>
   <title>Ken Chang</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2021-04-04T20:39:36+08:00</updated>
+  <updated>2021-04-05T18:01:05+08:00</updated>
   <author>
     <name>Ken Chang</name>
     <uri>https://kennc.github.io/</uri>
@@ -17,6 +17,55 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>使用 Jekyll 創建靜態網頁</title>
+    <link href="https://kennc.github.io/create-jekyll.html" rel="alternate" type="text/html" title="使用 Jekyll 創建靜態網頁" />
+    <published>2021-04-05T00:00:00+08:00</published>
+  
+    <updated>2021-04-05T00:00:00+08:00</updated>
+  
+    <id>https://kennc.github.io/create-jekyll.html</id>
+    <content src="https://kennc.github.io/create-jekyll.html" />
+    <author>
+      <name>Ken Chang</name>
+    </author>
+
+  
+    
+    <category term="Web" />
+    
+    <category term="Jekyll" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      部落格從 Hugo 搬到 Jekyll 已過了一段時間，會搬移的原因只是比較喜歡 Jekyll 的 Theme 風格。我第一個使用的靜態網頁產生框架是 Hexo，後來改用 Hugo，最近換到 Jekyll，用這三種框架創建靜態網頁的流程非常類似，每種框架有不同的雷，但 Google 都可以找到解法，問題都不大。
+
+1. 安裝 Jekyll
+從 Jekyll 依照官網步驟安裝。由於 Jekyll 是使用 Ruby 寫的，所以會需要安裝 Ruby，而安裝 Ruby 後，需要再安裝其他工具。
+
+  管理環境語言版本的工具，rbenv 或 RVM
+  管理 Ruby 套件的 Gem
+  管理 Ruby 套件版本的 Bundler
+
+
+如上述都有完成，就可以透過 bundle exec jekyll s 看到網站
+
+2. 修改 theme 為 Chirpy
+在 Chirpy 看 README ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -239,49 +288,6 @@ commit
 
 
   We noticed that your app only includes links, images, or content aggregated from the Internet with limited or no native iOS functionality. We understand that this content may be curated from the web specifically for your users, but since it does not sufficiently differ from a mobile web browsing experience, it is not appropriate for the App S...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Apple reject - Invalid sdk value</title>
-    <link href="https://kennc.github.io/invalid-sdk-value.html" rel="alternate" type="text/html" title="Apple reject - Invalid sdk value" />
-    <published>2021-01-01T00:00:00+08:00</published>
-  
-    <updated>2021-01-01T00:00:00+08:00</updated>
-  
-    <id>https://kennc.github.io/invalid-sdk-value.html</id>
-    <content src="https://kennc.github.io/invalid-sdk-value.html" />
-    <author>
-      <name>Ken Chang</name>
-    </author>
-
-  
-    
-    <category term="iOS" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Invalid sdk value
-
-
-  Dear developer,
-
-  We have discovered one or more issues with your recent submission for “Your app name”. To process your submission, the following issues must be corrected:
-
-  Invalid sdk value - The value provided for the sdk portion of LC_VERSION_MIN_IPHONEOS in name.app/name is 10.2 which is greater than the maximum allowed value of 10.1.
-
-  Once these issues have been...
     </summary>
   
 
