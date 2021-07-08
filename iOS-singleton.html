@@ -40,7 +40,7 @@
 <meta name="twitter:creator" content="@Ken Chang" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"url":"https://kennc.github.io/iOS-singleton.html","headline":"iOS 中的 Singleton 及實作方式","dateModified":"2021-02-15T00:00:00+08:00","datePublished":"2021-02-15T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kennc.github.io/iOS-singleton.html"},"author":{"@type":"Person","name":"Ken Chang"},"description":"Singleton 原則是單例對象必須保證只有一個實例存在。不管是以何種方式實現，這個設計模式在軟體開發常見。甚至有些內建的類別已經是單例。iOS 有幾種作法可以讓開發者自己做出符合單例的類別，特別要注意 Thread Safety 即可。如果使用 Swift 開發，更有官方推薦簡潔有力的做法。","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"https://kennc.github.io/iOS-singleton.html","headline":"iOS 中的 Singleton 及實作方式","datePublished":"2021-02-15T00:00:00+08:00","dateModified":"2021-02-15T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kennc.github.io/iOS-singleton.html"},"author":{"@type":"Person","name":"Ken Chang"},"description":"Singleton 原則是單例對象必須保證只有一個實例存在。不管是以何種方式實現，這個設計模式在軟體開發常見。甚至有些內建的類別已經是單例。iOS 有幾種作法可以讓開發者自己做出符合單例的類別，特別要注意 Thread Safety 即可。如果使用 Swift 開發，更有官方推薦簡潔有力的做法。","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -653,6 +653,22 @@
 
   
 
+    <div id="access-lastmod" class="post">
+      <span>Recent Update</span>
+      <ul class="post-content pl-0 pb-1 ml-1 mt-2">
+
+      
+        
+        
+        
+        <li><a href="/iOS-app-rejected.html">iOS APP rejected</a></li>
+      
+
+      </ul>
+    </div> <!-- #access-lastmod -->
+
+  
+
   
 
 
@@ -1114,6 +1130,45 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -1240,7 +1295,7 @@
       
       
       <div class="card">
-        <a href="/app-completeness.html">
+        <a href="/information-needed.html">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1268,7 +1323,7 @@
 
 </span>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Apple reject - App Completeness</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Apple reject - Information Needed</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1277,12 +1332,10 @@
 
 
 
-                Guideline 2.1 - Performance - App Completeness
+                Guideline 2.1 - Information Needed
 
 
-  We discovered one or more bugs in your app when reviewed on iPhone and iPad running iOS 11.2.1 on Wi-Fi connected to an IPv6 network.
-
-  Specifica...
+  This type of app has been identified as one that may violate one or more of the following App Store Review Guidelines. Specifically, these types of apps often...
               </p>
             </div>
           </div>
@@ -1292,7 +1345,7 @@
       
       
       <div class="card">
-        <a href="/before-you-submit.html">
+        <a href="/invalid-sdk-value.html">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1320,7 +1373,7 @@
 
 </span>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Apple reject - Before You Submit</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Apple reject - Invalid sdk value</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1329,14 +1382,14 @@
 
 
 
-                4.0 Before You Submit: Info Needed (iOS)(Invalid sdk value)
+                Invalid sdk value
 
 
   Dear developer,
 
-  Information Needed
+  We have discovered one or more issues with your recent submission for “Your app name”. To process your submission, the following issues must be corrected:
 
-  We began the review of your app but aren’t able to continue because we need additional infor...
+...
               </p>
             </div>
           </div>
@@ -1346,7 +1399,7 @@
       
       
       <div class="card">
-        <a href="/iOS-app-rejected.html">
+        <a href="/minimum-functionality.html">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1374,7 +1427,7 @@
 
 </span>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>iOS APP rejected</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Apple reject - Design - Minimum Functionality</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1383,13 +1436,10 @@
 
 
 
-                前言
+                Guideline 4.2.2 - Design - Minimum Functionality
 
-分享我遇過的駁回原因，列出信件內容，並說明信件、導致原因以及我的解決方式，供遇到相同問題的開發者參考。每個審核人員看的角度都不太一樣，所以解決方式不一定適用。
 
-如果你對被駁回的原因有異議，可以回信給 Apple 申訴，有時是審核人員使用方式錯誤，或是認知問題，都可以得到更詳細的解釋。
-
-或是甚至 Apple Guideline 沒有詳述，而審核人員卻抓很嚴，也可以提出覆議，不過這一...
+  We noticed that your app only includes links, images, or content aggregated from the Internet with limited or no native iOS functionality. We un...
               </p>
             </div>
           </div>

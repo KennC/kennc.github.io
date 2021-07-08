@@ -4,7 +4,7 @@
   <id>https://kennc.github.io/</id>
   <title>Ken Chang</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2021-04-05T19:50:16+08:00</updated>
+  <updated>2021-07-08T22:32:34+08:00</updated>
   <author>
     <name>Ken Chang</name>
     <uri>https://kennc.github.io/</uri>
@@ -17,6 +17,149 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Apple reject - 1.5 Safety:Developer Information</title>
+    <link href="https://kennc.github.io/developer-information.html" rel="alternate" type="text/html" title="Apple reject - 1.5 Safety:Developer Information" />
+    <published>2021-07-07T00:00:00+08:00</published>
+  
+    <updated>2021-07-07T00:00:00+08:00</updated>
+  
+    <id>https://kennc.github.io/developer-information.html</id>
+    <content src="https://kennc.github.io/developer-information.html" />
+    <author>
+      <name>Ken Chang</name>
+    </author>
+
+  
+    
+    <category term="iOS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Guideline 1.5 - Safety - Developer Information
+
+
+  The support URL specified in your app’s metadata, &amp;lt; your webpage &amp;gt;, does not properly navigate to the intended destination.
+
+
+信件大綱
+
+  在 App 的介紹資訊中，沒有提供足夠的開發者資訊。
+
+
+導致原因
+
+  由於這是 Side Project，所以在 App 的介紹頁面中，提供支援的網頁內容，無提供聯絡方式導致。
+
+
+解決方式
+
+  提供支援的網頁內容，加上聯絡方式即可。我是加上電子信箱後再次送審，即沒有被退件。
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Apple reject - 2.3.10 - Performance - Accurate Metadata</title>
+    <link href="https://kennc.github.io/accurate-metadata.html" rel="alternate" type="text/html" title="Apple reject - 2.3.10 - Performance - Accurate Metadata" />
+    <published>2021-07-07T00:00:00+08:00</published>
+  
+    <updated>2021-07-07T00:00:00+08:00</updated>
+  
+    <id>https://kennc.github.io/accurate-metadata.html</id>
+    <content src="https://kennc.github.io/accurate-metadata.html" />
+    <author>
+      <name>Ken Chang</name>
+    </author>
+
+  
+    
+    <category term="iOS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Guideline 2.3.10 - Performance - Accurate Metadata
+
+
+  We noticed that your app or its metadata includes irrelevant third-party platform information.
+
+
+
+  Specifically, your app includes non-iOS platform references in the What’s New text.
+
+
+
+  Referencing third-party platforms in your app or its metadata is not permitted on the App Store unless there is specific interactive functionality.
+
+
+信件大...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Apple reject - Legal - Privacy - Data Use and Sharing</title>
+    <link href="https://kennc.github.io/legal-privacy-data-use-and-sharing.html" rel="alternate" type="text/html" title="Apple reject - Legal - Privacy - Data Use and Sharing" />
+    <published>2021-07-07T00:00:00+08:00</published>
+  
+    <updated>2021-07-07T00:00:00+08:00</updated>
+  
+    <id>https://kennc.github.io/legal-privacy-data-use-and-sharing.html</id>
+    <content src="https://kennc.github.io/legal-privacy-data-use-and-sharing.html" />
+    <author>
+      <name>Ken Chang</name>
+    </author>
+
+  
+    
+    <category term="iOS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Guideline 5.1.2 - Legal - Privacy - Data Use and Sharing
+
+
+  The app privacy information you provided in App Store Connect indicates you collect data in order to track the user, including Device ID. However, you do not use App Tracking Transparency to request the user’s permission before tracking their activity.
+
+
+
+  Starting with iOS 14.5, apps on the App Store need to receive the user’s permi...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -119,175 +262,6 @@ Apple 官方的類別有些已實作 singleton，例如：
   UserDefaults.standard
   NotificationCenter.defualt
   ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>個人 Git 常用指令</title>
-    <link href="https://kennc.github.io/git-snippet.html" rel="alternate" type="text/html" title="個人 Git 常用指令" />
-    <published>2021-01-09T00:00:00+08:00</published>
-  
-    <updated>2021-01-09T00:00:00+08:00</updated>
-  
-    <id>https://kennc.github.io/git-snippet.html</id>
-    <content src="https://kennc.github.io/git-snippet.html" />
-    <author>
-      <name>Ken Chang</name>
-    </author>
-
-  
-    
-    <category term="Tool" />
-    
-    <category term="Git" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      記錄我常用的Git指令，有想到會陸續增加。
-
-
-
-checkout
-
-  $ git checkout &amp;lt;branch&amp;gt; 切換分支
-  $ git checkout -b &amp;lt;branch&amp;gt; 建立新分支，同時切換到新分支
-
-
-
-add
-
-  $ git add . 所有異動檔案加到暫存區（如果是 Git 1.x 版不會處理「刪除檔案」的異動）
-  $ git add &amp;lt;filename&amp;gt; 加入此檔案到暫存區。
-
-
-
-  加入檔案到暫存區這個步驟，在我使用 GUI 工具後，改成會在 GUI 工具再看一次自己修改的檔案內容，確認修改部分沒有錯誤後就勾選檔案，工具會把勾選的檔案加到暫存區。
-
-
-
-commit
-
-  $ git commit -m "title" -m "desc" 將暫存區的檔案儲存，並加入標題跟描述。
-
-
-
-  也可以只加標題或是不特別...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>iTerm + Oh My Zsh 設定</title>
-    <link href="https://kennc.github.io/mac-command-line.html" rel="alternate" type="text/html" title="iTerm + Oh My Zsh 設定" />
-    <published>2021-01-02T00:00:00+08:00</published>
-  
-    <updated>2021-01-02T00:00:00+08:00</updated>
-  
-    <id>https://kennc.github.io/mac-command-line.html</id>
-    <content src="https://kennc.github.io/mac-command-line.html" />
-    <author>
-      <name>Ken Chang</name>
-    </author>
-
-  
-    
-    <category term="Tool" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      iTerm + Oh My Zsh 設定。由於每次重灌 MAC 後就要上網搜尋一下模板跟字體的載點，以及環境的設定。所以這篇目的是記下步驟、連結資源，未來好找。
-
-
-
-
-  
-    安裝 iTerm2
-  
-  
-    安裝 oh my zsh
-  
-
-
-如無法安裝，請確認是否已事先安裝好 Command Line Tools 或是 Homebrew。
-
-在 iTerm2 上看到這畫面就是成功安裝 oh my zsh
-
-
-
-
-修改theme
-
-從第一次使用以來看網路教學就是都用 agnoster，所以也用得很習慣，有換過別的 theme，不過最後還是換回 agnoster 了。
-
-
-  用 vi 打開 ~/.zshrc 修改 ZSH_THEME 為 agnoster
-  重新開啟 iTerm ，就可以看到 theme，字體還是亂碼，改好字體後就不會了。
-
-
-
-
-調整背景顏色
-
-
-...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Apple reject - Design - Minimum Functionality</title>
-    <link href="https://kennc.github.io/minimum-functionality.html" rel="alternate" type="text/html" title="Apple reject - Design - Minimum Functionality" />
-    <published>2021-01-01T00:00:00+08:00</published>
-  
-    <updated>2021-01-01T00:00:00+08:00</updated>
-  
-    <id>https://kennc.github.io/minimum-functionality.html</id>
-    <content src="https://kennc.github.io/minimum-functionality.html" />
-    <author>
-      <name>Ken Chang</name>
-    </author>
-
-  
-    
-    <category term="iOS" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Guideline 4.2.2 - Design - Minimum Functionality
-
-
-  We noticed that your app only includes links, images, or content aggregated from the Internet with limited or no native iOS functionality. We understand that this content may be curated from the web specifically for your users, but since it does not sufficiently differ from a mobile web browsing experience, it is not appropriate for the App S...
     </summary>
   
 

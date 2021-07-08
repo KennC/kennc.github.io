@@ -1,6 +1,51 @@
 [
   
   {
+    "title": "Apple reject - 1.5 Safety:Developer Information",
+    "url": "/developer-information.html",
+    "categories": "iOS",
+    "tags": "iOS, Apple Store, Reject",
+    "date": "2021-07-07 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Guideline 1.5 - Safety - Developer Information  The support URL specified in your app’s metadata, &amp;lt; your webpage &amp;gt;, does not properly navigate to the intended destination.信件大綱  在 App 的介紹資訊中，沒有提供足夠的開發者資訊。導致原因  由於這是 Side Project，所以在 App 的介紹頁面中，提供支援的網頁內容，無提供聯絡方式導致。解決方式  提供支援的網頁內容，加上聯絡方..."
+  },
+  
+  {
+    "title": "Apple reject - 2.3.10 - Performance - Accurate Metadata",
+    "url": "/accurate-metadata.html",
+    "categories": "iOS",
+    "tags": "iOS, Apple Store, Reject",
+    "date": "2021-07-07 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Guideline 2.3.10 - Performance - Accurate Metadata  We noticed that your app or its metadata includes irrelevant third-party platform information.  Specifically, your app includes non-iOS platform references in the What’s New text.  Referencing third-party platforms in your app or its metadata is..."
+  },
+  
+  {
+    "title": "Apple reject - Legal - Privacy - Data Use and Sharing",
+    "url": "/legal-privacy-data-use-and-sharing.html",
+    "categories": "iOS",
+    "tags": "iOS, Apple Store, Reject",
+    "date": "2021-07-07 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Guideline 5.1.2 - Legal - Privacy - Data Use and Sharing  The app privacy information you provided in App Store Connect indicates you collect data in order to track the user, including Device ID. However, you do not use App Tracking Transparency to request the user’s permission before tracking th..."
+  },
+  
+  {
     "title": "使用 Jekyll 創建靜態網頁",
     "url": "/create-jekyll.html",
     "categories": "Web, Jekyll",
